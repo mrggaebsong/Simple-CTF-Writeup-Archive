@@ -134,7 +134,7 @@ I logged in to ftp as anonymous user and I found that there's nothing interestin
 
 Since port 80 (http) is open, so I took a look to webpage. I found there was an *Apache default page* when access http://10.10.237.205
 
-![image-20200826143155941](C:\Users\chananya.c\Documents\writeup\tryhackme-simplectf.assets\image-20200826143155941.png)
+![image-20200826143155941](https://user-images.githubusercontent.com/22939654/91794564-8b2b7100-ec45-11ea-9492-a2cb5e6c5e07.png)
 
 And then I used dirb for scanning web path directory to find what path will be discover.
 
@@ -260,7 +260,7 @@ Content-Type: text/html; charset=iso-8859-1
 </body></html>
 ```
 
-![image-20200826144557932](C:\Users\chananya.c\Documents\writeup\tryhackme-simplectf.assets\image-20200826144557932.png)
+![image-20200826144557932](https://user-images.githubusercontent.com/22939654/91794611-b31ad480-ec45-11ea-8272-25caf1dac6c1.png)
 
 I found that /simple path landed the CMS webpage.
 
@@ -297,7 +297,7 @@ Shellcodes: No Results
 The table showed results that the CMS Made Simple 2.2.8 is vulnerable to **SQL Injection** !!!
 I did a quick search about CMS Made Simple CVE and then found the result in Exploit DB.
 
-![image-20200826150154009](C:\Users\chananya.c\Documents\writeup\tryhackme-simplectf.assets\image-20200826150154009.png)
+![image-20200826150154009](https://user-images.githubusercontent.com/22939654/91794635-c5950e00-ec45-11ea-98aa-a95e87ee6da1.png)
 
 > <u>Answer Keys</u>
 >
@@ -343,7 +343,7 @@ Since I obtained the username and password, and port 2222 was opened. I logged i
 $ ssh mitch@10.10.237.205 -p 2222
 ```
 
-![image-20200826153251765](C:\Users\chananya.c\Documents\writeup\tryhackme-simplectf.assets\image-20200826153251765.png)
+![image-20200826153251765](https://user-images.githubusercontent.com/22939654/91794651-d47bc080-ec45-11ea-9f20-99e202da11e7.png)
 
 Time to explore the machine!!!
 
